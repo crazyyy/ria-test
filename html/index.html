@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RIA test</title>
+
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+
+<script>
+
+  $(function() {
+
+		var region = [
+			{"Украина" : "01"},
+			{"Белорусия" : "02"},
+			{"Польша" : "03"}
+		];
+		var city = [
+			"Винница",
+			"Одеса",
+			"Варшава",
+			"Кельце",
+			"Минск",
+			"Гомель",
+			"Киев"
+		];
+		var hotel = [
+			"Савой",
+			"БелРусь",
+			"Хилтон",
+			"Прага",
+			"Наполеон",
+			"Звезда",
+			"Пансионат",
+			"Меркурий",
+			"Жоржета",
+			"Украина"
+		];
+
+
+    $( "#city" ).autocomplete({
+      source: city
+    });
+    $( "#region" ).autocomplete({
+      source: region
+    });
+    $( "#hotel" ).autocomplete({
+      source: hotel
+    });
+
+  });
+
+
+
+$.getJSON("getPrincipalCitiesWithPrincipalHotels", function(json){
+  alert("JSON Data: " + json.russianName.name);
+});
+
+
+
+
+
+
+</script>
+
+
+</head>
+<body>
+	<section>
+		<article>
+			<form action="">
+				<input type="text" id="region" name="region" placeholder="Регион">
+				<input type="text" id="city" name="city" placeholder="Город">
+				<input type="text" id="hotel" name="hotel" placeholder="Отель">
+				<p class="recheck">В <span class="choisen-city">Винница</span> (<span class="choisen-region">Украина</span>) вы выбрали для проживания <span class="choisen-hotel">Жовтневый</span></p>
+				<button type="submit">Дада, хочу!</button>
+			</form>
+		</article>
+	</section>
+</body>
+</html>

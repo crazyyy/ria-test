@@ -1,0 +1,33 @@
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	color: #0f0f0f;
+	background-color: #ccc;
+	padding-top: 150px;
+}
+section {
+	width: 800px;
+	min-height: 150px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 80px;
+}
+input {
+	padding: 5px 10px;
+	width: 215px;
+	font-style: italic;
+	margin: 0 20px 20px 0;	
+}
+input:last-child{
+	margin: 0 0 20px;
+}
+p span {
+	padding-bottom: 3px;
+	border-bottom: 2px solid #000;
+}
+button {
+	text-align: center;
+	width: 215px;
+	padding: 5px 10px;
+	margin: 0 auto;
+}
