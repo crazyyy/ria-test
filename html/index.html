@@ -57,12 +57,13 @@
 
 
 
-$.getJSON("getPrincipalCitiesWithPrincipalHotels", function(json){
-  alert("JSON Data: " + json.russianName.name);
-});
+var the_object;
+var http_request = new XMLHttpRequest();
+http_request.open( "GET", "http://saitobaza.ru/html/ria-test/hotels", true );
 
-
-
+var ajaxData = '{"id":10025,"russianName":"Аcуан","englishName":"ASWAN"}';
+var ajaxObj = JSON.parse( ajaxData );
+alert (ajaxObj.russianName); /* Виведе "wiki5"*/
 
 
 

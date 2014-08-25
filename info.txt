@@ -5,7 +5,6 @@
 
 Таблицы от третьей к первой имеют связи один ко многим
 
-
 Напишите автокомплитер (выпадает список 1(город: название), 2 (гостиница: название), 3 (регион: название), слово город, гостиница, регион появляются только у первого елемента блока) как видите обычный селект не подходит из-за наличия заглавий 
 
 При клике на пункте в автокомплитере в текстовое поле переносится текст вида Город Киев или Гостиница Hilton, или Киевская область соответствено в зависимости от того на что кликнули. Дальше по ентеру или по нажатию кнопки субмит форма должна засубмитится на урл вида
@@ -19,3 +18,20 @@
 Таблицы можете предварительно задать в джейсоне или другим способом (не принципиально)
 
 Запрещено использовать фреймворки и готовые плагины.
+
+-- 
+http://json.parser.online.fr/
+http://saitobaza.ru/html/ria-test/hotels
+
+http://msdn.microsoft.com/ru-ru/library/cc836466(v=vs.94).aspx
+
+http://www.linkexchanger.su/2008/39.html
+http://support.travelpayouts.com/entries/28155136-API-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0-%D0%BE%D1%82%D0%B5%D0%BB%D0%B5%D0%B9
+http://engine.hotellook.com/api/v2/static/countries.json
+http://jquery-docs.ru/ajax/jquery-getjson/#code
+https://docs.google.com/document/d/1OmMd0t63zDerXarpmImZhr9Zm8eC3QQnESZr2nBXm6E/edit?pli=1
+http://remote.bronni.ru/Dictionaries.ashx/getPrincipalCitiesWithPrincipalHotels?countryId=3
+http://remote.bronni.ru/Dictionaries.ashx/getCitiesByIds?ids=3&ids=4
+http://remote.bronni.ru/Dictionaries.ashx/getCities?countryId=1
+http://jquery-docs.ru/ajax/jquery-getjson/#code
+http://api.jquery.com/jquery.getjson/
